@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authors",
+  "info": {
+    "singularName": "author",
+    "pluralName": "authors",
+    "displayName": "authors",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post",
+      "mappedBy": "author"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "job": {
+      "type": "enumeration",
+      "enum": [
+        "Black Mage",
+        "Red Mage",
+        "Blue Mage",
+        "Summoner",
+        "Bard",
+        "Dancer",
+        "Machinist",
+        "Dragoon",
+        "Samurai",
+        "Ninja",
+        "Monk",
+        "Reaper",
+        "Warrior",
+        "Paladin",
+        "Dark Knight",
+        "Gunbreaker",
+        "White Mage",
+        "Astrologian",
+        "Scholar",
+        "Sage"
+      ],
+      "required": true,
+      "default": "Black Mage"
+    },
+    "server": {
+      "type": "enumeration",
+      "enum": [
+        "Behemoth",
+        "Excalibur",
+        "Exodus",
+        "Famfrit",
+        "Hyperion",
+        "Lamia",
+        "Leviathan",
+        "Ultros"
+      ],
+      "required": true,
+      "default": "Behemoth"
+    },
+    "ttlink": {
+      "type": "string",
+      "default": "https://twitter.com/"
+    },
+    "ttname": {
+      "type": "string"
+    },
+    "ffnickname": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
