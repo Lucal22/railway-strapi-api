@@ -12,6 +12,11 @@ module.exports = ({ env }) => ({
           api_key: env('CLOUDINARY_KEY'),
           api_secret: env('CLOUDINARY_SECRET'),
         },
+      breakpoints: {
+        large: 860,
+        medium: 570,
+        small: 350,
+      },
         actionOptions: {
           upload: {},
           delete: {},
