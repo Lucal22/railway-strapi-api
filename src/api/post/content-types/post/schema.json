@@ -51,18 +51,19 @@
       "maxLength": 250,
       "default": "Veja mais sobre este assunto clicando no link"
     },
-    "tags": {
+    "tag": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::tag.tag",
       "inversedBy": "posts"
     },
     "carousels": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }
