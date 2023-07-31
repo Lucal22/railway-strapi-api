@@ -35,6 +35,12 @@
       "relation": "oneToMany",
       "target": "api::post.post",
       "mappedBy": "tag"
+    },
+    "description": {
+      "type": "string",
+      "default": "This is a category of the website.",
+      "required": true,
+      "maxLength": 400
     }
   }
 }

@@ -33,6 +33,12 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "default": "This is an expansion of final fantasy XIV.",
+      "maxLength": 400
     }
   }
 }
