@@ -21,8 +21,12 @@
     "@strapi/provider-upload-cloudinary": "^4.8.2",
     "@strapi/strapi": "^4.8.2",
     "pg": "8.7.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
     "sqlite3": "^5.1.1",
-    "strapi-plugin-populate-deep": "^0.1.2"
+    "strapi-plugin-populate-deep": "^0.1.2",
+    "styled-components": "^5.3.11"
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",
