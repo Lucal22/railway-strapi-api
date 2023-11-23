@@ -1,12 +1,16 @@
 {
   "name": "strapi",
-  "private": true,
   "version": "0.1.0",
+  "private": true,
   "description": "A Strapi application",
+  "license": "MIT",
+  "author": {
+    "name": "A Strapi developer"
+  },
   "scripts": {
+    "build": "strapi build",
     "develop": "strapi develop",
     "start": "strapi start",
-    "build": "strapi build",
     "strapi": "strapi"
   },
   "dependencies": {
@@ -20,15 +24,11 @@
     "sqlite3": "^5.1.1",
     "strapi-plugin-populate-deep": "^0.1.2"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "35d7a084-3088-4d0b-869e-f503693ee8e5"
-  },
   "engines": {
     "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "strapi": {
+    "uuid": "35d7a084-3088-4d0b-869e-f503693ee8e5"
+  }
 }
